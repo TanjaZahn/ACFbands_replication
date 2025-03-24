@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+data/FRED-MD-2024-07.csv
+data/FRED_MD_description
+data/FRED_MD_description.pdf
