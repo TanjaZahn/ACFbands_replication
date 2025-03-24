@@ -1,0 +1,6 @@
+Data used from FRED-MD: https://www.stlouisfed.org/research/economists/mccracken/fred-databases
+
+
+Follow the link to download the 2024-07.csv file (download will start immediately):
+
+https://www.stlouisfed.org/-/media/project/frbstl/stlouisfed/research/fred-md/monthly/2024-07.csv?sc_lang=en&hash=876A1CCE26C20876594956013802F191

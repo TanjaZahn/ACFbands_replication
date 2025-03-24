@@ -6,7 +6,7 @@ Inference Bands for Autocorrelations” by Uwe Hassler, Marc-Oliver Pohle
 and Tanja Zahn. The `R` package accompanying the paper is available
 under the repository [ACFbands](https://github.com/TanjaZahn/ACFbands).
 
-## Installation
+## Installation and Downloading Data
 
 Before running the replication code, the accompanying `R` package
 [ACFbands](https://github.com/TanjaZahn/ACFbands) has to be installed
@@ -29,6 +29,18 @@ install.packages("stargazer")
 install.packages("xtable")
 install.packages("kableExtra")
 ```
+
+The data used in the empirical application has been downloaded from the
+[FRED-MD
+database](https://www.stlouisfed.org/research/economists/mccracken/fred-databases),
+see also the [working
+paper](https://s3.amazonaws.com/real.stlouisfed.org/wp/2015/2015-012.pdf)
+by McCracken and Ng (2016) for a description. To replicate results,
+please download the `2024-07.csv` data set from the website or by
+clicking this
+[link](https://www.stlouisfed.org/-/media/project/frbstl/stlouisfed/research/fred-md/monthly/2024-07.csv?sc_lang=en&hash=876A1CCE26C20876594956013802F191=)
+(download will start immediately). After downloading, please save the
+file under the name “FRED-MD-2024-07” in the subfolder called “data”.
 
 ## code
 
@@ -65,12 +77,10 @@ is only executed, if they are not.
 
 ## data
 
-This folder contains the data used in the empirical application. It has
-been downloaded from the [FRED-MD
-database](https://www.stlouisfed.org/research/economists/mccracken/fred-databases),
-see also the [working
-paper](https://s3.amazonaws.com/real.stlouisfed.org/wp/2015/2015-012.pdf)
-by McCracken and Ng (2016) for a description.
+After downloading the data set from
+[FRED-MD](https://www.stlouisfed.org/research/economists/mccracken/fred-databases),
+please store it in this folder, see the remark under “Installation and
+Downloading Data”.
 
 ## results
 
