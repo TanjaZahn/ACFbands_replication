@@ -67,7 +67,10 @@ is only executed, if they are not.
 
 This folder contains the data used in the empirical application. It has
 been downloaded from the [FRED-MD
-database](https://www.stlouisfed.org/research/economists/mccracken/fred-databases).
+database](https://www.stlouisfed.org/research/economists/mccracken/fred-databases),
+see also the [working
+paper](https://s3.amazonaws.com/real.stlouisfed.org/wp/2015/2015-012.pdf)
+by McCracken and Ng (2016) for a description.
 
 ## results
 
@@ -78,3 +81,18 @@ residuals (“sim_ts”).
 ## graphics
 
 This folder contains all plots and tables.
+
+## References
+
+<div id="refs" class="references csl-bib-body hanging-indent"
+entry-spacing="0">
+
+<div id="ref-mccracken2016" class="csl-entry">
+
+McCracken, Michael W, and Serena Ng. 2016. “FRED-MD: A Monthly Database
+for Macroeconomic Research.” *Journal of Business & Economic Statistics*
+34: 574–89.
+
+</div>
+
+</div>

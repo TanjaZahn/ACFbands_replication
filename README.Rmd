@@ -1,5 +1,6 @@
 ---
 output: github_document
+bibliography: reference.bib  
 ---
 
 ```{r, include = FALSE}
@@ -57,7 +58,7 @@ The folder "code" includes the `R` code that was used to create all the results 
 
 ## data
 
-This folder contains the data used in the empirical application. It has been downloaded from the [FRED-MD database](https://www.stlouisfed.org/research/economists/mccracken/fred-databases).
+This folder contains the data used in the empirical application. It has been downloaded from the [FRED-MD database](https://www.stlouisfed.org/research/economists/mccracken/fred-databases), see also the [working paper](https://s3.amazonaws.com/real.stlouisfed.org/wp/2015/2015-012.pdf) by @mccracken2016 for a description.
 
 ## results
 
@@ -66,6 +67,8 @@ The raw results from the simulation runs are stored in the folder "results" for 
 ## graphics
 
 This folder contains all plots and tables.
+
+## References
 
 
 
