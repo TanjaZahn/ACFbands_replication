@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 
 # Replication: "Simultaneous Inference Bands for Autocorrelations"
 
-This repository contains replication files for the paper "Simultaneous Inference Bands for Autocorrelations" by Uwe Hassler, Marc-Oliver Pohle and Tanja Zahn. The `R` package accompanying the paper is available under the repository [ACFbands](https://github.com/TanjaZahn/ACFbands).
+This repository contains replication files for the paper ["Simultaneous Inference Bands for Autocorrelations"](https://arxiv.org/abs/2503.18560) by Uwe Hassler, Marc-Oliver Pohle and Tanja Zahn. The `R` package accompanying the paper is available under the repository [ACFbands](https://github.com/TanjaZahn/ACFbands).
 
 ## Installation and Downloading Data
 
