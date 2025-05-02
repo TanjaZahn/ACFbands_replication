@@ -87,7 +87,7 @@ Downloading Data”.
 
 The raw results from the simulation runs are stored in the folder
 “results” for the time series case (“sim_ts”) and for dynamic regression
-residuals (“sim_ts”).
+residuals (“sim_dyn”).
 
 ## graphics
 

@@ -64,7 +64,7 @@ After downloading the data set from [FRED-MD](https://www.stlouisfed.org/researc
 
 ## results
 
-The raw results from the simulation runs are stored in the folder "results" for the time series case ("sim_ts") and for dynamic regression residuals ("sim_ts").
+The raw results from the simulation runs are stored in the folder "results" for the time series case ("sim_ts") and for dynamic regression residuals ("sim_dyn").
 
 ## graphics
 
