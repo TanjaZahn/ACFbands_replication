@@ -8,7 +8,6 @@ source("code/analytical_examples/ex_01_setup.R")
 H <- 10
 
 ##### Converting matrix into LaTeX format -------------------------------------
-# Code taken from https://www.r-bloggers.com/2020/08/matrix-to-latex/
 
 
 array_to_LaTeX <- function(arr){
@@ -48,7 +47,7 @@ ggplot(df_res, aes(x = h, y = B_sqrt)) +
   scale_y_continuous(limits=c(0.6, 2), breaks = seq(0.6, 2, 0.2)) +
   scale_x_continuous(limits=c(1, H), breaks = seq(1, H, 1)) +
   scale_color_manual(labels = mylabels,  values = mycolors) +
-  labs(x = "h", y = "Relative width") +
+  labs(x = "h", y = expression(sqrt(b[hh]))) +
   mytheme
 ggsave(paste0(path_graphics, "conf_bands_width_over_h.pdf"), width = 20, height = 12, units = "cm") 
 
