@@ -1,0 +1,52 @@
+\begin{table}
+\centering
+\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
+\begin{tabular}{l|ccc|ccc|cccl|ccc|ccc|cccl|ccc|ccc|cccl|ccc|ccc|cccl|ccc|ccc|cccl|ccc|ccc|cccl|ccc|ccc|cccl|ccc|ccc|cccl|ccc|ccc|cccl|ccc|ccc|ccc}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{3}{c}{$T = 50$} & \multicolumn{3}{c}{$T = 200$} & \multicolumn{3}{c}{$T = 800$} \\
+\cmidrule(l{3pt}r{3pt}){2-4} \cmidrule(l{3pt}r{3pt}){5-7} \cmidrule(l{3pt}r{3pt}){8-10}
+ & $H = 1$ & $H = 10 $ & $H = 25$ & $H = 1$ & $H = 10 $ & $H = 25$ & $H = 1$ & $H = 10 $ & $H = 25$\\
+\midrule
+\addlinespace[0.3em]
+\hline
+\multicolumn{10}{c}{\textbf{size: $\phi = 0$}}\\
+\hline
+\hspace{1em}Box-Pierce & 0.114 & 0.079 & 0.023 & 0.144 & 0.182 & 0.165 & 0.173 & 0.260 & 0.255\\
+\hspace{1em}Ljung-Box & 0.125 & 0.131 & 0.142 & 0.146 & 0.204 & 0.228 & 0.174 & 0.265 & 0.272\\
+\hspace{1em}Robust Box-Pierce & 0.097 & 0.160 & 0.981 & 0.090 & 0.110 & 0.240 & 0.104 & 0.131 & 0.175\\
+\hspace{1em}Shao & 0.066 & 0.468 & NA & 0.067 & 0.111 & 0.433 & 0.089 & 0.094 & 0.119\\
+\addlinespace[0.3em]
+\hline
+\multicolumn{10}{c}{\textbf{power: $\phi = 0.25$}}\\
+\hline
+\hspace{1em}Box-Pierce & 0.447 & 0.216 & 0.101 & 0.937 & 0.776 & 0.606 & 1.000 & 1.000 & 0.998\\
+\hspace{1em}Ljung-Box & 0.467 & 0.286 & 0.272 & 0.938 & 0.793 & 0.672 & 1.000 & 1.000 & 0.998\\
+\hspace{1em}Robust Box-Pierce & 0.399 & 0.218 & 0.985 & 0.906 & 0.604 & 0.448 & 0.998 & 0.996 & 0.996\\
+\hspace{1em}Shao & 0.297 & 0.531 & NA & 0.637 & 0.386 & 0.634 & 0.948 & 0.894 & 0.830\\
+\addlinespace[0.3em]
+\hline
+\multicolumn{10}{c}{\textbf{power: $\phi = 0.5$}}\\
+\hline
+\hspace{1em}Box-Pierce & 0.924 & 0.689 & 0.462 & 1.000 & 1.000 & 0.999 & 1.000 & 1.000 & 1.000\\
+\hspace{1em}Ljung-Box & 0.932 & 0.752 & 0.688 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000\\
+\hspace{1em}Robust Box-Pierce & 0.909 & 0.373 & 0.994 & 0.998 & 0.997 & 0.924 & 1.000 & 1.000 & 1.000\\
+\hspace{1em}Shao & 0.596 & 0.608 & NA & 0.840 & 0.701 & 0.796 & 0.953 & 0.980 & 0.988\\
+\addlinespace[0.3em]
+\hline
+\multicolumn{10}{c}{\textbf{power: $\phi = 0.75$}}\\
+\hline
+\hspace{1em}Box-Pierce & 0.999 & 0.977 & 0.917 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000\\
+\hspace{1em}Ljung-Box & 0.999 & 0.987 & 0.968 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000\\
+\hspace{1em}Robust Box-Pierce & 0.996 & 0.603 & 0.997 & 1.000 & 1.000 & 0.997 & 1.000 & 1.000 & 1.000\\
+\hspace{1em}Shao & 0.717 & 0.578 & NA & 0.843 & 0.686 & 0.655 & 0.950 & 0.986 & 0.989\\
+\addlinespace[0.3em]
+\hline
+\multicolumn{10}{c}{\textbf{power: $\phi = 0.95$}}\\
+\hline
+\hspace{1em}Box-Pierce & 1.000 & 1.000 & 0.998 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000\\
+\hspace{1em}Ljung-Box & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000 & 1.000\\
+\hspace{1em}Robust Box-Pierce & 1.000 & 0.832 & NA & 1.000 & 1.000 & 0.999 & 1.000 & 1.000 & 1.000\\
+\hspace{1em}Shao & 0.584 & 0.333 & NA & 0.782 & 0.277 & 0.085 & 0.936 & 0.911 & 0.508\\
+\bottomrule
+\end{tabular}}
+\end{table}
