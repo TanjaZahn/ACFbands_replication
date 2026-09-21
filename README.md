@@ -14,9 +14,10 @@ Before running the replication code, the accompanying `R` package
 from Github:
 
 ``` r
-install.packages("devtools")
+# install.packages("devtools")
 library(devtools)
-install_github("TanjaZahn/ACFbands")
+pak::pak("TanjaZahn/ACFbands")
+library(ACFbands)
 ```
 
 To install the other packages used in the replication files, run the
@@ -29,10 +30,11 @@ install.packages("patchwork")
 install.packages("stargazer")
 install.packages("xtable")
 install.packages("kableExtra")
+install.packages("testcorr")
 ```
 
-The data used in the empirical application has been downloaded from the
-[FRED-MD
+The data used in the macroeconomic case study has been downloaded from
+the [FRED-MD
 database](https://www.stlouisfed.org/research/economists/mccracken/fred-databases),
 see also the [working
 paper](https://s3.amazonaws.com/real.stlouisfed.org/wp/2015/2015-012.pdf)
@@ -41,7 +43,15 @@ please download the `2024-07.csv` data set from the website or by
 clicking this
 [link](https://www.stlouisfed.org/-/media/project/frbstl/stlouisfed/research/fred-md/monthly/2024-07.csv?sc_lang=en&hash=876A1CCE26C20876594956013802F191=)
 (download will start immediately). After downloading, please save the
-file under the name “FRED-MD-2024-07” in the subfolder called “data”.
+file under the name “FRED-MD-2024-07.csv” in the subfolder called
+“data”.
+
+Daily Fama-French data (three factors) excess returns have been
+downloaded from the [Fama-French data
+library](https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_%20library.html),
+see also Fama and French (2023). To replicate results, please download
+the data set from the website and save the file under the name
+“fama_french_daily.txt” in the subfolder called “data”.
 
 ## code
 
@@ -51,43 +61,47 @@ subfolder, `R` scripts are numerated in the respective order. We give a
 short overview:
 
 - **analytical_examples:** contains the files that are used to show the
-  properties of the inference bands for the example of an AR(1) process
-  (Figures 3 to 7 as well as the examples for the B matrices contained
-  in the Appendix).
+  properties of the inference bands for the theoretical example of an
+  AR(1) process.
 
-- **application:** contains the files used in the empirical application
-  in section 7 and Appendix E.
-
-- **sim_ts:** produces the simulation results for time series,
-  i.e. sections 6.1 and 6.2.
-
-- **sim_dyn:** produces the simulation results for dynamic regressions,
-  i.e. section 6.3.
+- **application:** contains the files used in the case studies.
 
 - **functions:** contains some custom functions that files from the
   other folders use. They will be called upon automatically in the
   respective places. Thus, the files contained in “functions” do not
   have to be run explicitly.
 
+- **sim_dyn:** produces the simulation results for dynamic regressions
+  with iid errors.
+
+- **sim_dyn_garch:** produces the simulation results for dynamic
+  regressions with normal GARCH errors.
+
+- **sim_ts:** produces the simulation results for time series with iid
+  errors.
+
+- **sim_ts_garch:** produces the simulation results for time series with
+  normal GARCH errors.
+
+- **sim_ts_garch_chi2:** produces the simulation results for time series
+  with Chi-square GARCH errors.
+
 - **mytheme:** contains some graphical settings for the plots. This file
   does not have to be run explicitly.
 
-*Note*: Most of the code in **sim_ts** and **sim_dyn** checks if
-simulation results are already available in the folder **results** and
-is only executed, if they are not.
+*Note*: Most of the code to reproduce simulation results checks if
+results are already available in the folder **results** and is only
+executed, if they are not.
 
 ## data
 
-After downloading the data set from
-[FRED-MD](https://www.stlouisfed.org/research/economists/mccracken/fred-databases),
-please store it in this folder, see the remark under “Installation and
-Downloading Data”.
+After downloading the data sets, please store it in this folder, see the
+remark under “Installation and Downloading Data”.
 
 ## results
 
 The raw results from the simulation runs are stored in the folder
-“results” for the time series case (“sim_ts”) and for dynamic regression
-residuals (“sim_dyn”).
+“results” using the same names for the subfolders as above (see “code”).
 
 ## graphics
 
@@ -95,8 +109,15 @@ This folder contains all plots and tables.
 
 ## References
 
-<div id="refs" class="references csl-bib-body hanging-indent"
-entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
+
+<div id="ref-fama2023" class="csl-entry">
+
+Fama, Eugene F, and Kenneth R French. 2023. “Production of U.S. Rm-Rf,
+SMB, and HML in the Fama-French Data Library.” *Chicago Booth Research
+Paper*, nos. 23-22.
+
+</div>
 
 <div id="ref-mccracken2016" class="csl-entry">
 
